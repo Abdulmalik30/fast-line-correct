@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="flex h-screen w-full flex-col gap-16">
+    <header class="flex w-full items-center gap-20">
+      <h1 class="w-1/2">
+        <img src="./img/efficient-removebg-preview.png" alt="logo" />
+      </h1>
+
+      <address
+        class="flex w-1/2 flex-col"
+        aria-label="Fast line deliveries address"
+      >
+        <h2 class="text-2xl font-bold" translate="no">Fast Line Deliveries</h2>
+        <p translate="no">
+          10C Bradbury St City / Town Daiston State / Province / Region
+        </p>
+        <p translate="no" class="mb-4">London Zip / Postal Code N16 8JN</p>
+
+        <a href="info@fastlinedeliveries.com">info@fastlinedeliveries.com</a>
+      </address>
+    </header>
+
+    <article
+      class="flex w-full flex-col justify-center bg-teal-700 p-10 text-white"
+    >
+      <h2 class="text-3xl">PAID BY:</h2>
+
+      <section class="max-w-4xl">
+        <form class="flex flex-col">
+          <div class="flex">
+            <label for="name" class="p-4 text-[20px] font-bold">Name:</label>
+            <input
+              type="text"
+              spellcheck="false"
+              class="w-[80%] border-none bg-transparent text-[20px] opacity-70 outline-none"
+              id="name"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="flex">
+            <label for="Address" class="p-4 text-[20px] font-bold"
+              >Address:</label
+            >
+            <input
+              type="text"
+              spellcheck="false"
+              class="w-[90%] border-none bg-transparent text-[20px] opacity-70 outline-none"
+              id="Address"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="flex">
+            <label for="zip_code" class="p-4 text-[20px] font-bold"
+              >Zip code:</label
+            >
+            <input
+              type="number"
+              spellcheck="false"
+              class="w-[80%] border-none bg-transparent text-[20px] opacity-70 outline-none"
+              id="zip_code"
+              required
+            />
+          </div>
+
+          <div class="flex">
+            <label for="number" class="p-4 text-[20px] font-bold"
+              >Phone Number:</label
+            >
+            <input
+              type="tel"
+              spellcheck="false"
+              class="w-[50%] border-none bg-transparent text-[20px] opacity-70 outline-none"
+              id="number"
+              required
+            />
+          </div>
+
+          <div class="flex">
+            <label for="email" class="p-4 text-[20px] font-bold">Email:</label>
+            <input
+              type="email"
+              spellcheck="false"
+              autocomplete="off"
+              class="w-[50%] border-none bg-transparent text-[20px] opacity-70 outline-none focus:bg-transparent focus:outline-none"
+              id="email"
+              required
+            />
+          </div>
+
+          <div class="flex">
+            <label for="receipt_no" class="p-4 text-[20px] font-bold"
+              >Receipt No:</label
+            >
+            <input
+              type="number"
+              spellcheck="false"
+              class="w-[50%] appearance-none border-none bg-transparent text-[20px] leading-normal opacity-70 outline-none"
+              id="receipt_no"
+              required
+            />
+          </div>
+
+          <div class="flex">
+            <label for="date" class="p-4 text-[20px] font-bold">Date:</label>
+            <input
+              type="datetime"
+              spellcheck="false"
+              class="w-[50%] border-none bg-transparent text-[20px] opacity-70 outline-none"
+              id="date"
+              required
+            />
+          </div>
+        </form>
+      </section>
+    </article>
+
+    <article class="flex w-full flex-col justify-center p-10">
+      <h2 class="text-4xl font-bold">Receipt</h2>
+      <table class="text-left">
+        <tr class="border-collapse border-b-[4px]">
+          <th class="p-6 text-[1.2rem]">Description</th>
+          <th class="p-6 text-[1.2rem]">Price</th>
+        </tr>
+
+        <tr class="border-collapse border-b-[4px]">
+          <td class="p-6 text-[1.2rem]">
+            CUSTOM CLEARANCE FEE PAID 25,000 PHP
+          </td>
+          <td class="p-6 text-[1.2rem]">$25000</td>
+        </tr>
+
+        <tr class="border-collapse border-b-[4px]">
+          <td class="p-6 text-[1.2rem] font-bold">Total</td>
+          <td class="p-6 text-[1.2rem] font-bold">$25000</td>
+        </tr>
+      </table>
+
+      <ul class="mx-auto mt-4 w-[80%] list-disc p-6 pl-5">
+        <li>For more information on this package contact our agent</li>
+      </ul>
+    </article>
+  </body>
+</html>
